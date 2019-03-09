@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Responsive portfolio website",
   "main": "src/index.html",
-  "homepage": "https://thewhitewolf1337.github.io/",
+  "homepage": "https://thewhitewolf1337.github.io/my_portfolio/",
   "author": "David Karrick",
   "license": "MIT",
   "scripts": {
@@ -26,9 +26,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheWhiteWolf1337/TheWhiteWolf1337.github.io.git"
+    "url": "git+https://github.com/TheWhiteWolf1337/my_portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/TheWhiteWolf1337/TheWhiteWolf1337.github.io/issues"
+    "url": "https://github.com/TheWhiteWolf1337/my_portfolio/issues"
   }
 }

@@ -179,7 +179,7 @@ main {
 
 .btn-dark {
 	@extend .btn;
-	background: darken($primary-color, 50);
+	background: darken($github-grey, 5);
 	color: $black;
 }
 
