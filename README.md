@@ -15,3 +15,8 @@ This Repository is to serve as my own portfolio, a template for others to use, a
 -   [ ] Replace project with my real projects
 -   [ ] Make a switchbox or something to switch between github personal project and contributions
 -   [ ] Add actual job(work actuall coding jobs)
+
+## Gradual Improvements
+
+I am guilty of obsessing over needless optimizations. I am compelled to make anything I touch as fast as possible (or at least as fast as I know I can make it). To that end...
+[Initial Benchmarks & Some Thoughts on Improvement](webperf/initial.md)
