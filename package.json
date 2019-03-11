@@ -7,10 +7,13 @@
 	"author": "David Karrick",
 	"license": "MIT",
 	"scripts": {
-		"build: sass": "node-sass --output-style compressed -r scss/ -o src/css/",
-		"build: typescript": "tsc",
-		"watch: sass": "onchange 'scss/*.scss' -- run-s build: sass",
-		"watch: typescript": "onchange 'typescript/*.{ts,tsx}' -- run-s build: typescript",
+		"build:sass": "node-sass --output-style compressed -r scss/ -o src/css/",
+		"build:typescript": "tsc",
+		"min:init": "cp -r src minified",
+		"min:css": "node-sass --output-style compressed -r scss/ -o minified/css/",
+		"min:javascript": "for %f in src/javascript(*.js) do uglifyjs %f --compress --mangle --output minified/%f",
+		"watch:sass": "onchange 'scss/*.scss' -- run-s build: sass",
+		"watch:typescript": "onchange 'typescript/*.{ts,tsx}' -- run-s build: typescript",
 		"watcher": "run-p watch:*",
 		"sassy": "node-sass -w --output-style compressed  scss/ -o src/css/ --recursive",
 		"saucy": "node-sass -w scss/ -o src/css/ --recursive",
@@ -28,7 +31,8 @@
 		"stylelint-config-idiomatic-order": "^6.2.0",
 		"tslint-config-prettier": "^1.18.0",
 		"tslint-microsoft-contrib": "^6.1.0",
-		"typescript": "^3.3.3333"
+		"typescript": "^3.3.3333",
+		"uglify-js": "^3.4.9"
 	},
 	"repository": {
 		"type": "git",
