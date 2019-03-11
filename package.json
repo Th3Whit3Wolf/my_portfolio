@@ -9,15 +9,15 @@
 	"scripts": {
 		"build:sass": "node-sass --output-style compressed -r scss/ -o src/css/",
 		"build:typescript": "tsc",
-		"min:init": "cp -r src minified",
+		"min:init": "cp -r src/* minified/",
 		"min:css": "node-sass --output-style compressed -r scss/ -o minified/css/",
-		"min:javascript": "for %f in src/javascript(*.js) do uglifyjs %f --compress --mangle --output minified/%f",
+		"min:javascript": "uglifyjs-folder src/javascript -o minified/javascript",
 		"watch:sass": "onchange 'scss/*.scss' -- run-s build: sass",
 		"watch:typescript": "onchange 'typescript/*.{ts,tsx}' -- run-s build: typescript",
 		"watcher": "run-p watch:*",
 		"sassy": "node-sass -w --output-style compressed  scss/ -o src/css/ --recursive",
 		"saucy": "node-sass -w scss/ -o src/css/ --recursive",
-		"deploy": "gh-pages -d src",
+		"deploy": "gh-pages -d minified",
 		"tslint-check": "tslint-config-prettier-check ./tslint.json"
 	},
 	"devDependencies": {
