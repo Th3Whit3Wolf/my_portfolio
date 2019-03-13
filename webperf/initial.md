@@ -6,17 +6,17 @@
 
 #### Performance Score
 
-###### PageSpeed Score: A(94%)
+###### PageSpeed Score: `A(94%)`
 
-###### YSlow Score :A(94%)
+###### YSlow Score: `A(94%)`
 
 #### Page Details
 
-###### Fully Loaded Time: 0.8s
+###### Fully Loaded Time: `0.8s`
 
-###### Total Page Size: 336KB
+###### Total Page Size: `336KB`
 
-###### Request: 8
+###### Request: `8`
 
 ### Recomendations
 
@@ -74,13 +74,10 @@
 ## Pingdom
 #### Performance Grade
 A 93
-
 #### Page Size
 354.1 KB
-
 #### Load Time
 83ms
-
 #### Requests
 9
 
@@ -88,11 +85,10 @@ A 93
 - Add Expires headers
 Web pages are becoming increasingly complex with more scripts, style sheets, images, and Flash on them. A first-time visit to a page may require several HTTP requests to load all the components. By using Expires headers these components become cacheable, which avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often associated with images, but they can and should be used on all page components including scripts, style sheets, and Flash.
 
-## Page Speed insights
-### Score 100
+## Page Speed Insights
+### Score `100`
 
 ### Lab Data
-
 |                         | Mobile | Desktop |
 | :---------------------- | :----: | :-----: |
 | First Contentful Paint  |  1.6s  |  0.5 s  |
@@ -103,10 +99,9 @@ Web pages are becoming increasingly complex with more scripts, style sheets, ima
 | Estimated Input Latency | 10 ms  |  10 ms  |
 
 ### Opportunities
-
 | Opportunity                         | Mobile Savings | Desktop Savings |
 | :---------------------------------- | :------------: | :-------------: |
-| Serve images in next-gen formats    |      0.81      |     0.16 s      |
+| Serve images in next-gen formats    |     0.81s      |     0.16 s      |
 | Eliminate render-blocking resources |     0.54 s     |     0.15 s      |
 | Properly size images                |     0.3 s      |                 |
 | Efficiently encode images           |     0.15 s     |                 |
