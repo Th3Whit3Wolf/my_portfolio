@@ -17,6 +17,7 @@
 		"watcher": "run-p watch:*",
 		"sassy": "node-sass -w --output-style compressed  scss/ -o src/css/ --recursive",
 		"saucy": "node-sass -w scss/ -o src/css/ --recursive",
+		"minify": "npm-run-all min:init min:css",
 		"deploy": "gh-pages -d minified",
 		"tslint-check": "tslint-config-prettier-check ./tslint.json"
 	},
@@ -58,7 +59,8 @@
 				"s"
 			],
 			"string-quotes": "single"
-		}
+		},
+		"ignoreFiles": "./minified/css/main.css"
 	},
 	"eslint": {
 		"extends": [
