@@ -19,5 +19,9 @@ This Repository is to serve as my own portfolio, a template for others to use, a
 ## Gradual Improvements
 
 I am guilty of obsessing over needless optimizations. I am compelled to make anything I touch as fast as possible (or at least as fast as I know I can make it). To that end...
+
 [Initial Benchmarks & Some Thoughts on Improvement](webperf/initial.md)
+
 [My First Optimization Update](webperf/firstUpdate.md)
+
+[Final Update](webperf/finalUpdate.md)
