@@ -5,6 +5,7 @@
 ![GitHub Language Count](https://img.shields.io/github/languages/count/TheWhiteWolf1337/my_portfolio.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/TheWhiteWolf1337/my_portfolio.svg)](https://github.com/TheWhiteWolf1337/my_portfolio/issues)
 [![GitHub License](https://img.shields.io/github/license/TheWhiteWolf1337/my_portfolio.svg)](https://github.com/TheWhiteWolf1337/my_portfolio/blob/master/LICENSE)
+![Repo Size](https://github-size-badge.herokuapp.com/TheWhiteWolf1337/my_portfolio.svg)
 
 This Repository is to serve as my own portfolio, a template for others to use, and as some practice with web development.
 
