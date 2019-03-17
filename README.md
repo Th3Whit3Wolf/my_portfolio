@@ -6,6 +6,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/TheWhiteWolf1337/my_portfolio.svg?label=my_template)](https://github.com/TheWhiteWolf1337/my_portfolio/issues)
 [![GitHub License](https://img.shields.io/github/license/TheWhiteWolf1337/my_portfolio.svg?label=my_template)](https://github.com/TheWhiteWolf1337/my_portfolio/blob/master/LICENSE)
 ![Repo Size](https://github-size-badge.herokuapp.com/TheWhiteWolf1337/my_portfolio.svg?label=my_template)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43b60a73-5fde-4065-9e25-7fadbcebd489/deploy-status)](https://app.netlify.com/sites/infallible-yalow-01d508/deploys)
 
 This Repository is to serve as my own portfolio, a template for others to use, and as some practice with web development.
 
@@ -18,12 +19,13 @@ This Repository is to serve as my own portfolio, a template for others to use, a
 -   [ ] Add actual job(work actuall coding jobs)
 
 <<<<<<< HEAD
+
 ## Gradual Improvements
 
 I am guilty of obsessing over needless optimizations. I am compelled to make anything I touch as fast as possible (or at least as fast as I know I can make it). To that end...
 
 [Initial Benchmarks & Some Thoughts on Improvement](webperf/initial.md)
 
-[My First Optimization Update](webperf/firstUpdate.md)
-=======
->>>>>>> a14b81ef5b27f133d4bb9c2de5250d9addb93cd7
+# [My First Optimization Update](webperf/firstUpdate.md)
+
+> > > > > > > a14b81ef5b27f133d4bb9c2de5250d9addb93cd7
