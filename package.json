@@ -22,7 +22,9 @@
 		"sassy": "node-sass -w --output-style compressed  scss/ -o src/css/ --recursive",
 		"saucy": "node-sass -w scss/ -o src/css/ --recursive",
 		"minify": "npm-run-all -p min:*",
-		"deploy": "gh-pages -d minified",
+		"git:deploy": "gh-pages -d minified",
+		"netlify:deploy": "netlify deploy",
+		"netlify:postdeploy": "netlify deploy --prod",
 		"tslint": "tslint -c src/ts/tslint.json src/ts/*.ts",
 		"tslint-check": "tslint-config-prettier-check ./tslint.json"
 	},
