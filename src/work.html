@@ -8,14 +8,6 @@
 			var cb = function() {
 				var l = document.createElement('link')
 				l.rel = 'stylesheet'
-				l.href =
-					'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
-				var h = document.getElementsByTagName('head')[0]
-				h.parentNode.insertBefore(l, h)
-			}
-			var cb2 = function() {
-				var l = document.createElement('link')
-				l.rel = 'stylesheet'
 				l.href = 'css/main.css'
 				var h = document.getElementsByTagName('head')[0]
 				h.parentNode.insertBefore(l, h)
@@ -79,7 +71,16 @@
 			<div class="projects">
 				<div class="item">
 					<a href="#!">
-						<img src="img/projects/project1.jpg" alt="Project" />
+						<picture>
+							<source
+								srcset="img/projects/project1.webp"
+								type="image/webp"
+							/>
+							<img
+								src="img/projects/project1.jpg"
+								alt="Project"
+							/>
+						</picture>
 					</a>
 					<a href="#" class="btn-light">
 						<i class="fas fa-eye"></i> Project
@@ -90,7 +91,16 @@
 				</div>
 				<div class="item">
 					<a href="#!">
-						<img src="img/projects/project2.jpg" alt="Project" />
+						<picture>
+							<source
+								srcset="img/projects/project2.webp"
+								type="image/webp"
+							/>
+							<img
+								src="img/projects/project2.jpg"
+								alt="Project"
+							/>
+						</picture>
 					</a>
 					<a href="#" class="btn-light">
 						<i class="fas fa-eye"></i> Project
@@ -101,7 +111,16 @@
 				</div>
 				<div class="item">
 					<a href="#!">
-						<img src="img/projects/project3.jpg" alt="Project" />
+						<picture>
+							<source
+								srcset="img/projects/project3.webp"
+								type="image/webp"
+							/>
+							<img
+								src="img/projects/project3.jpg"
+								alt="Project"
+							/>
+						</picture>
 					</a>
 					<a href="#" class="btn-light">
 						<i class="fas fa-eye"></i> Project
@@ -112,7 +131,16 @@
 				</div>
 				<div class="item">
 					<a href="#!">
-						<img src="img/projects/project4.jpg" alt="Project" />
+						<picture>
+							<source
+								srcset="img/projects/project4.webp"
+								type="image/webp"
+							/>
+							<img
+								src="img/projects/project4.jpg"
+								alt="Project"
+							/>
+						</picture>
 					</a>
 					<a href="#" class="btn-light">
 						<i class="fas fa-eye"></i> Project
@@ -123,7 +151,16 @@
 				</div>
 				<div class="item">
 					<a href="#!">
-						<img src="img/projects/project5.jpg" alt="Project" />
+						<picture>
+							<source
+								srcset="img/projects/project5.webp"
+								type="image/webp"
+							/>
+							<img
+								src="img/projects/project5.jpg"
+								alt="Project"
+							/>
+						</picture>
 					</a>
 					<a href="#" class="btn-light">
 						<i class="fas fa-eye"></i> Project
@@ -142,6 +179,6 @@
 			</script>
 		</footer>
 
-		<script src="javascript/main.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
