@@ -119,7 +119,23 @@ gulp.task('copyXml', function(cb) {
 })
 
 gulp.task('copySrc', function(cb) {
-	gulp.src('src/favicon*', 'src/site.webmanifest', 'src/apple-touch-icon.png')
+	gulp.series('copyFavicon', 'copySWM', 'copyApl')(cb)
+})
+
+gulp.task('copyFavicon', function(cb) {
+	gulp.src('src/favicon*')
+		.pipe(gulp.dest('dist'))
+		.on('end', cb)
+})
+
+gulp.task('copySWM', function(cb) {
+	gulp.src('src/site.webmanifest')
+		.pipe(gulp.dest('dist'))
+		.on('end', cb)
+})
+
+gulp.task('copyApl', function(cb) {
+	gulp.src('src/apple-touch-icon.png')
 		.pipe(gulp.dest('dist'))
 		.on('end', cb)
 })
