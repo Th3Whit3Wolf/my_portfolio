@@ -118,6 +118,12 @@ gulp.task('copyXml', function(cb) {
 		.on('end', cb)
 })
 
+gulp.task('copySrc', function(cb) {
+	gulp.src('src/favicon*', 'src/site.webmanifest', 'src/apple-touch-icon.png')
+		.pipe(gulp.dest('dist'))
+		.on('end', cb)
+})
+
 // Copy & Minify All XML files
 gulp.task('copyFonts', function(cb) {
 	gulp.src(src.fonts)
@@ -327,7 +333,14 @@ gulp.task('images', function(cb) {
 })
 
 gulp.task('default', function(cb) {
-	gulp.series('copyHtml', 'javascript', 'css', 'sitemap', 'copyFonts')(cb)
+	gulp.series(
+		'copySrc',
+		'copyHtml',
+		'javascript',
+		'css',
+		'sitemap',
+		'copyFonts'
+	)(cb)
 })
 
 gulp.task('full', function(cb) {
