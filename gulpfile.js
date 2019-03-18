@@ -119,7 +119,7 @@ gulp.task('copyXml', function(cb) {
 })
 
 gulp.task('copySrc', function(cb) {
-	gulp.series('copyFavicon', 'copySWM', 'copyApl')(cb)
+	gulp.series('copyFavicon', 'copySWM', 'copyApl', 'copyAnd')(cb)
 })
 
 gulp.task('copyFavicon', function(cb) {
@@ -136,6 +136,12 @@ gulp.task('copySWM', function(cb) {
 
 gulp.task('copyApl', function(cb) {
 	gulp.src('src/apple-touch-icon.png')
+		.pipe(gulp.dest('dist'))
+		.on('end', cb)
+})
+
+gulp.task('copyAnd', function(cb) {
+	gulp.src('src/android*')
 		.pipe(gulp.dest('dist'))
 		.on('end', cb)
 })
