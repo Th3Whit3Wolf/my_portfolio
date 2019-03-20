@@ -28,6 +28,8 @@ I am guilty of obsessing over needless optimizations. I am compelled to make any
 
 # [My First Optimization Update](webperf/firstUpdate.md)
 
+# [My Final Optimization Update](webperf/FinalUpdate.md)
+
 Netlify Version at https://infallible-yalow-01d508.netlify.com
 
 > > > > > > > a14b81ef5b27f133d4bb9c2de5250d9addb93cd7
